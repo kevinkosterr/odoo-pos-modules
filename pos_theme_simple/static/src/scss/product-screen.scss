@@ -11,4 +11,25 @@
     width: 450px;
   }
 
+  .products-widget-control {
+
+    .category-button img{
+      object-fit: contain;
+    }
+
+    .input-group {
+      align-items: center;
+    }
+  }
+
+  .product-list-container {
+    .product-list {
+      .product {
+        .product-img img {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+
 }
