@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="payment_screen" xml:space="preserve">
+
+    <t t-inherit="point_of_sale.PaymentScreen" t-inherit-mode="extension">
+        <xpath expr="//t[@t-else='']" position="replace">
+            <t t-else="">
+                <div class="payment-screen screen d-flex flex-column h-100 bg-100"
+                     t-att-class="{ 'd-none': !props.isShown }">
+                    <t t-call="point_of_sale.PaymentScreenTop"/>
+                    <div class="main-content d-flex overflow-auto h-100">
+                        <div class="left-content w-25 bg-400">
+                            <t t-call="point_of_sale.PaymentScreenButtons"/>
+                        </div>
+                        <div class="center-content d-flex flex-column w-50 p-1 border-start border-end bg-300">
+                            <PaymentScreenStatus order="currentOrder"/>
+                            <Numpad class="'flex-grow-1'" buttons="getNumpadButtons()"/>
+                        </div>
+                        <div class="right-content d-flex flex-column w-25 bg-400">
+                            <t t-call="point_of_sale.PaymentScreenMethods"/>
+                            <t t-call="point_of_sale.PaymentScreenValidate"/>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </xpath>
+    </t>
+
+</templates>
