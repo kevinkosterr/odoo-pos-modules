@@ -1,0 +1,180 @@
+$primary-dark-mode-color: #252525;
+$secondary-dark-mode-color: #343434;
+$third-dark-mode-color: #2f2f2f;
+$fourth-dark-mode-color: #202020;
+
+$dark-mode-border-color: #424242;
+
+$primary-odoo-color: #71639e;
+
+$selected-color: #1d1d1d;
+
+$general-text-color: #efefef;
+$link-color: #bdbdbd;
+$general-muted-text-color: rgba(239, 239, 239, 0.9);
+
+.pos.dark {
+  color: $general-text-color !important;
+
+  /** General background and component colors */
+  .bg-white, .bg-black {
+    background-color: $primary-dark-mode-color !important;
+  }
+
+  .pos-rightheader {
+    color: $general-text-color;
+  }
+
+  .bg-view {
+    background-color: $primary-dark-mode-color !important;
+  }
+
+  .bg-100 {
+    background-color: $secondary-dark-mode-color !important;
+  }
+
+  .bg-200 {
+    background-color: $primary-dark-mode-color !important;
+  }
+
+  .bg-300 {
+    background-color: $third-dark-mode-color !important;
+  }
+
+  .bg-400 {
+    background-color: $fourth-dark-mode-color !important;
+  }
+
+  .btn-light {
+    background: $primary-dark-mode-color;
+    color: $general-text-color;
+    border-color: $primary-dark-mode-color;
+  }
+
+  .btn-secondary {
+    background: $third-dark-mode-color;
+    color: $general-text-color;
+    border-color: $third-dark-mode-color;
+  }
+
+  .btn-outline-secondary:not(:hover) {
+    color: $general-muted-text-color;
+  }
+
+  .border-top {
+    border-top: 1px solid $dark-mode-border-color !important;
+  }
+
+  .border-bottom {
+    border-bottom: 1px solid $dark-mode-border-color !important;
+  }
+
+  .border {
+    border: 1px solid $third-dark-mode-color !important;
+  }
+
+  .text-muted {
+    color: $general-muted-text-color !important;
+  }
+
+  .form-select {
+    color: $general-muted-text-color;
+  }
+
+  .form-check-input {
+    background-color: #efefef;
+  }
+
+  .popup {
+    background: $primary-dark-mode-color !important;
+    color: $general-text-color !important;
+
+    td {
+      color: $general-text-color !important;
+    }
+  }
+
+  .table {
+    color: $general-muted-text-color;
+
+    tr {
+      &:hover {
+        background-color: $primary-dark-mode-color;
+      }
+      &.active {
+        background-color: $primary-dark-mode-color;
+      }
+    }
+  }
+
+  /** Generic HTML components */
+  h1, h2, h3, h4, h5, h6 {
+    color: $general-text-color !important;
+  }
+
+  input:not(.form-check-input) {
+    background: transparent;
+    color: $general-muted-text-color;
+  }
+
+  label {
+    color: $general-text-color;
+  }
+
+  a {
+    color: $link-color;
+  }
+
+  /** Specific component colors */
+
+  /**
+    Product screen
+  */
+  .product-screen {
+
+    .rightpane {
+      background-color: $secondary-dark-mode-color !important;
+
+      .order-container {
+        .orderline {
+          color: $general-muted-text-color !important;
+
+          &.selected, &:hover {
+            background-color: $selected-color;
+          }
+        }
+      }
+
+      .order-summary {
+        color: $general-text-color !important;
+      }
+    }
+
+  }
+
+  /**
+  Payment screen
+   */
+  .payment-screen {
+    .paymentlines-empty .total {
+      text-shadow: 0px 2px $fourth-dark-mode-color, 0px 2px 2px rgba(0, 0, 0, 0.27);
+    }
+
+    .paymentline {
+      color: $general-muted-text-color !important;
+    }
+  }
+
+  /**
+  Receipt screen
+   */
+  .receipt-screen {
+    .pos-receipt-container {
+      background: $secondary-dark-mode-color !important;
+      *{
+        background: #eaeaea !important;
+      }
+    }
+  }
+
+}
