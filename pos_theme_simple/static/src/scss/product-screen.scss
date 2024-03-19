@@ -1,0 +1,14 @@
+.product-screen {
+
+  // We should reset the width here, since this was previously the customer's shopping cart
+  .leftpane {
+    max-width: unset;
+    width: unset;
+  }
+
+  .rightpane {
+    max-width: 450px;
+    width: 450px;
+  }
+
+}
