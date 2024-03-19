@@ -20,7 +20,7 @@
     "author": "Kevin Koster",
     "website": "https://kevinkoster.nl",
     "category": "Customizations",
-    "version": "0.1",
+    "version": "1.0.0",
     "depends": ["point_of_sale"],
     "assets": {
         "point_of_sale._assets_pos": [
