@@ -1,6 +1,6 @@
 ## Odoo 17.0 - Simple POS Theme
 This is a Odoo 17.0 module that aims to make some small improvements on the
-UI of the Odoo 17.0 `point_of_sale` module. As if right now, the module consist
+UI of the Odoo 17.0 `point_of_sale` module. As of right now, the module consists
 of nothing fancy. However, it does make some noticeable changes to the general lay-out
 of the POS system. 
 
