@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates id="product_card" xml:space="preserve">
+
+    <t t-inherit="point_of_sale.ProductCard" t-inherit-mode="extension">
+        <xpath expr="//div[hasclass('product-content')]" position="before">
+            <div t-if="props.isFavorite" class="product-favorite-tag">
+                <i class="product-favorite-tag-logo fa fa-star" role="img" aria-label="Favorite" title="Favorite"/>
+            </div>
+        </xpath>
+    </t>
+
+</templates>
