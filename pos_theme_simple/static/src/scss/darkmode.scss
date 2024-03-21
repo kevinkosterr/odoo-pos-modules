@@ -80,6 +80,14 @@ $general-muted-text-color: rgba(239, 239, 239, 0.9);
     border-bottom: 1px solid $dark-mode-border-color !important;
   }
 
+  .border-start {
+    border-left: 1px solid $dark-mode-border-color !important;
+  }
+
+  .border-end {
+    border-right: 1px solid $dark-mode-border-color !important;
+  }
+
   .border {
     border: 1px solid $third-dark-mode-color !important;
   }
@@ -178,8 +186,13 @@ $general-muted-text-color: rgba(239, 239, 239, 0.9);
   Payment screen
    */
   .payment-screen {
-    .paymentlines-empty .total {
-      text-shadow: 0px 2px $fourth-dark-mode-color, 0px 2px 2px rgba(0, 0, 0, 0.27);
+    .paymentlines-empty {
+      .total {
+        text-shadow: 0px 2px $fourth-dark-mode-color, 0px 2px 2px rgba(0, 0, 0, 0.27);
+      }
+      .message {
+        color: $general-muted-text-color;
+      }
     }
 
     .paymentline {
