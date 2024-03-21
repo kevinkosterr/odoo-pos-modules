@@ -25,6 +25,17 @@ $general-muted-text-color: rgba(239, 239, 239, 0.9);
     color: $general-text-color;
   }
 
+  .dropdown-menu {
+    border: 2px solid darken($secondary-dark-mode-color, 5%);
+    background: $secondary-dark-mode-color;
+    .dropdown-item {
+      color: $general-muted-text-color;
+      &:hover {
+        color: $general-text-color;
+      }
+    }
+  }
+
   .bg-view {
     background-color: $primary-dark-mode-color !important;
   }
@@ -115,6 +126,9 @@ $general-muted-text-color: rgba(239, 239, 239, 0.9);
   input:not(.form-check-input) {
     background: transparent;
     color: $general-muted-text-color;
+    &.border-light {
+      border-color: #525252 !important;
+    }
   }
 
   label {
@@ -131,6 +145,14 @@ $general-muted-text-color: rgba(239, 239, 239, 0.9);
     Product screen
   */
   .product-screen {
+
+    .leftpane {
+      .products-widget-control {
+         .input-container {
+           border-color: #525252 !important;
+         }
+      }
+    }
 
     .rightpane {
       background-color: $secondary-dark-mode-color !important;
@@ -175,6 +197,36 @@ $general-muted-text-color: rgba(239, 239, 239, 0.9);
         background: #eaeaea !important;
       }
     }
+  }
+
+  /**
+  Order screen
+   */
+  .ticket-screen {
+    .order-row {
+      color: $general-muted-text-color;
+    }
+
+    .order-row:nth-child(even) {
+      background: $third-dark-mode-color;
+    }
+    .order-row:nth-child(odd) {
+      background: $fourth-dark-mode-color;
+    }
+
+    .order-container {
+      .orderline {
+        color: $general-text-color !important;
+        &.selected, &:hover {
+          background: $secondary-dark-mode-color;
+        }
+      }
+    }
+
+    .order-summary {
+      color: $general-text-color;
+    }
+
   }
 
 }
