@@ -19,12 +19,13 @@
     """,
     "author": "Kevin Koster",
     "website": "https://kevinkoster.nl",
-    "category": "Customizations",
+    "category": "Theme",
     "version": "1.0.0",
     "depends": ["point_of_sale"],
     "assets": {
         "point_of_sale._assets_pos": [
             "/pos_theme_simple/static/src/**/*",
         ],
-    }
+    },
+    "application": True
 }
