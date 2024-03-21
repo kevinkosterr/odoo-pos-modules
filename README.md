@@ -15,8 +15,8 @@ Some of the changes include:
 
 ### Screenshots
 Light Mode:
-![Light Mode Product Screen](repository_assets/light-mode-product-screen.png)
-![Light Mode Payment Screen](repository_assets/light-mode-payment-screen.png)
+![Light Mode Product Screen](assets/light-mode-product-screen.png)
+![Light Mode Payment Screen](assets/light-mode-payment-screen.png)
 Dark Mode:
-![Dark Mode Product Screen](repository_assets/dark-mode-product-screen.png)
-![Dark Mode Payment Screen](repository_assets/dark-mode-payment-screen.png)
+![Dark Mode Product Screen](assets/dark-mode-product-screen.png)
+![Dark Mode Payment Screen](assets/dark-mode-payment-screen.png)
