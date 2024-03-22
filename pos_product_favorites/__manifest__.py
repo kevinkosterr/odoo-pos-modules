@@ -13,5 +13,6 @@
         "point_of_sale._assets_pos": [
             "/pos_product_favorites/static/src/**/*",
         ],
-    }
+    },
+    "application": True
 }
