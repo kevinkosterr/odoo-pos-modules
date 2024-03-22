@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates id="product_list" xml:space="preserve">
+
+    <t t-inherit="point_of_sale.ProductsWidget" t-inherit-mode="extension">
+        <xpath expr="//ProductCard" position="attributes">
+            <attribute name="isFavorite">product.priority === "1" ? true : false</attribute>
+        </xpath>
+    </t>
+
+</templates>
